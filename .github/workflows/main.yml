@@ -12,5 +12,6 @@ jobs:
         FTP_SERVER: plantme.co.nz
         FTP_USERNAME: plantme1
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        ARGS: 
+        REMOTE_DIR: github
+        ARGS: --delete
         # --delete arg will delete files on the server if you've deleted them in git
